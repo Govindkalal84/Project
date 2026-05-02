@@ -1,0 +1,47 @@
+
+
+
+
+server:
+  port: 5006
+
+spring:
+  application:
+    name: payment-service
+
+  datasource:
+    url: jdbc:mysql://yq9eAkzxxvnYuz5.root:ER5KAuU7ycb51i90@gateway01.ap-southeast-1.prod.aws.tidbcloud.com:4000/salon
+    username: yq9eAkzxxvnYuz5.root
+    password: eBukthkKaVtCAw3D
+
+  rabbitmq:
+    host: armadillo.rmq.cloudamqp.com
+    port: 5672
+    username: avhqyyix
+    password: ghDX0t0EkLkCdj0-wcDgtm2Honpt9sDk
+    virtual-host: avhqyyix
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+razorpay:
+  api:
+    key: "rzp_test_Shc0DpxrMa0ZCr"
+    secret: "SigQYilPFZ326PS55dToGIw2"
+
+stripe:
+  api:
+    key: "your stripe api key"
+
+
+eureka:
+  instance:
+    prefer-ip-address: true
+
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: https://eureka-4.onrender.com/eureka/

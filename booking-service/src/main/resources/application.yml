@@ -1,0 +1,33 @@
+server:
+  port: 5005
+
+spring:
+  application:
+    name: booking-service
+
+  datasource:
+    url: jdbc:mysql://yq9eAkzxxvnYuz5.root:ER5KAuU7ycb51i90@gateway01.ap-southeast-1.prod.aws.tidbcloud.com:4000/salon
+    username: yq9eAkzxxvnYuz5.root
+    password: eBuktKaVtCAw3Dhk
+
+  rabbitmq:
+    host: armadillo.rmq.cloudamqp.com
+    port: 5672
+    username: avhqyyix
+    password: ghDX0t0EkLkCdj0-wcDgtm2Honpt9sDk
+    virtual-host: avhqyyix
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+eureka:
+  instance:
+    prefer-ip-address: true
+
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: https://eureka-4.onrender.com/eureka/

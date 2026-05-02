@@ -1,0 +1,30 @@
+
+server:
+  port: 5001
+
+spring:
+  application:
+    name: user-service
+
+  datasource:
+    url: jdbc:mysql://yq9eAkzxxvnYuz5.root:ER5KAuU7ycb51i90@gateway01.ap-southeast-1.prod.aws.tidbcloud.com:4000/salon
+    username: yq9eAkzxxvnYuz5.root
+    password: eBuktKaVtCAw3Dhk
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+
+
+
+eureka:
+  instance:
+    prefer-ip-address: true
+
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: https://eureka-4.onrender.com/eureka/

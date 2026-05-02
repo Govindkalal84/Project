@@ -1,0 +1,35 @@
+
+
+server:
+  port: 5008
+
+
+spring:
+  application:
+    name: review-service
+
+
+
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+  datasource:
+    url: jdbc:mysql://yq9eAkzxxvnYuz5.root:ER5KAuU7ycb51i90@gateway01.ap-southeast-1.prod.aws.tidbcloud.com:4000/salon
+    username: yq9eAkzxxvnYuz5.root
+    password:  eBukthkKaVtCAw3D
+
+
+
+
+eureka:
+  instance:
+    prefer-ip-address: true
+
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: https://eureka-4.onrender.com/eureka/
